@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </meta>
+    <title>Toss App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </meta>
+    <!-- icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    </link>
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <style>
+        #image {
+            border-radius: 36% 64% 58% 42% / 53% 72% 28% 47%;
+        }
+
+        button:hover,
+        button:active,
+        button:focus {
+            box-shadow: 0 0 8px #fefefe;
+        }
+    </style>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+    class="font-['Josefin_Sans'] font-bold outline-0 flex flex-col justify-center items-center p-[1em] gap-[1em] bg-[#2e2545] w-[100vw] h-[100vh]">
+
+    <h1 class="text-[#f47538] w-[100%] text-center text-[2em]">Toss <span class="text-[#fefefe]">App</span> </h1>
+
+    <div class="w-[100%] h-[7em] flex flex-col justify-center items-center gap-[1em] text-[#fefefe] text-[1.5em]">
+        <h2 id="ins" class="text-center w-[5em] h-[5em] flex flex-col justify-center items-center">Pick The <span
+                class="text-[#f47538]">Toss</span></h2>
+        <h2 id="image"
+            class="hidden bi bg-[#fefefe] text-[2em] text-[#2e2545] w-[2.5em] h-[3em] object-cover flex justify-center items-center">
+        </h2>
+        <h2 class="hidden text-center w-[100%]" id="greet"></h2>
+    </div>
+
+    <div class="w-[100%] flex justify-center items-center gap-[1em]">
+        <button onclick="dollar()"
+            class="text-[#fefefe] bg-[#f47538] p-[0.5em] rounded-[10px] w-[6em] flex justify-center items-center gap-[0.4em]"><i
+                class="bi bi-currency-dollar"></i> Dollar</button>
+        <button onclick="yen()"
+            class="text-[#fefefe] bg-[#f47538] p-[0.5em] rounded-[10px] w-[6em] flex justify-center items-center gap-[0.4em]"><i
+                class="bi bi-currency-yen"></i> Yen</button>
+    </div>
+
+    <!-- javascript -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
